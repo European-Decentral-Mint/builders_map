@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>leaflet-map-simple</title>
+  <title>Builders Map - European NGOs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -27,7 +27,7 @@
 
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
-    center: [41.77, -72.69], // EDIT coordinates to re-center map
+    center: [51.49, -10.785], // EDIT coordinates to re-center map
     zoom: 4,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false,
     tap: false
@@ -42,6 +42,10 @@
   L.marker([41.77, -72.69]).addTo(map) // EDIT marker coordinates
   .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
 
+ /* Display a point marker with pop-up text */
+  L.marker([43.77, -74.69]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Hi Chez"); // EDIT pop-up text message
+    
  /* Display a point marker with pop-up text */
   L.marker([43.77, -74.69]).addTo(map) // EDIT marker coordinates
   .bindPopup("Hi Chez"); // EDIT pop-up text message
